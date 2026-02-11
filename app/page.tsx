@@ -4,6 +4,7 @@ import { ArrowRight, Menu, Search, SearchIcon, ShoppingCartIcon, User, X } from 
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import Hero from '@/public/headphone.jpg'
 
 const products = [
   {
@@ -223,7 +224,7 @@ export default function Home() {
       <section className="relative  mx-auto h-[400h] lg:h-[500]">
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-translate z-10">
           <Image
-            src="/headphone.JPG"
+            src={Hero}
             alt="Hero"
             fill
             className="object-cover"
