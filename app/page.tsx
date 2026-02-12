@@ -190,9 +190,9 @@ export default function Home() {
         </div> */}
 
           {mobileMenuOpen && (
-            <div className="md:hidden absolute top-16 left-0 w-75 h-74 bg-white shadow-lg">
-              <div className="">
-                <nav className="flex flex-col py-6 px-4 p-6 ">
+            <div className="md:hidden absolute top-full left-0 right-120 bg-white shadow-lg">
+              
+                <nav className="flex flex-col py-6 px-4">
                   <Link 
                     href="/" 
                     className="text-black pl-10 py-4 px-6 hover:text-gray-500 transition border-b"
@@ -215,13 +215,13 @@ export default function Home() {
                     Contact
                   </Link>
                 </nav>
-              </div>
+              
             </div>
           )}
 
       </header>
 
-      <section className="relative  mx-auto h-[400h] lg:h-[500]">
+      <section className="relative w-full h-[300px] md:h-[400px] lg:h-[500px]">
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-translate z-10">
           <Image
             src={Hero}
@@ -232,10 +232,10 @@ export default function Home() {
           />
         </div>
         <div className="relative z-20 h-full flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-4xl text-black lg:text-5xl font-bold pt-65 mb-6">
+          <h1 className="text-4xl text-black md:text-4xl lg:text-5xl font-bold pt-65 mb-6">
             Browse our latest products
           </h1>
-          <button className=" px-8 py-3 cursor-pointer border-1 border-white rounded-2xl hover:bg-gray-300 hover:text-black transition-all mb-8">
+          <button className="text-sm px-6 md:px-8 py-2.5 md:py-3 cursor-pointer border-1 border-white rounded-2xl hover:bg-gray-300 hover:text-black transition-all mb-6 md:mb-8">
             Shop all
           </button>
         </div>
@@ -244,7 +244,7 @@ export default function Home() {
       <section className="container mx-auto px-4 lg:px-6 py-8 md:py-12 lg:py-16">
         <h2 className="text-3xl lg:text-3xl font-bold text-black mb-8 md:mb-8 mt-6 md:mt-6">Products</h2>
 
-        <div className="grid grid-ccls-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-6 lg:gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-6 lg:gap-8">
           {products.map((product) => (
             <div key={product.id} className="group cursor-pointer">
               <div className="bg-gray-400 rounded-lg mb-3 md:mb-4 overflow-hidden aspect-square relative" >
@@ -299,12 +299,12 @@ export default function Home() {
 
       <footer className="border-t mt-6">
           <div className="container mx-auto px-4 py-8">
-            <div className="grid grid-col-1 lg:grid-cols-2 text-center gap-16">
-              <p className="text-sm text-gray-600">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+              <p className="text-xs text-gray-600">
                 &copy; 2026 OH MOBILITY, Powered by Shopify
               </p>
 
-              <Link href="/terms" className="text-sm text-gray-600 hover:text-black transition">
+              <Link href="/terms" className="text-xs text-gray-500 hover:text-black transition">
               Terms and Policies
               </Link>
             </div>
