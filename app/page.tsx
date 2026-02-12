@@ -93,26 +93,27 @@ export default function Home() {
               OH MOBILITY
             </Link>
 
-            <div className="flex items-center gap-8">
-              <button className="hidden md:block hover:text-gray-600 transition">
-                <SearchIcon className="w-5 h-5 text-black"/>
-              </button>
-              <button className="hidden md:block hover:text-gray-600 transition">
-                  <User className="w-6 h-6 text-black" />
-              </button>
-              <button className="hidden md:block hover:text-gray-600 transition">
-                  <ShoppingCartIcon className="ww-6 h-6 text-black" />
-              </button>
-            </div>
-
 
             <div className="flex items-center gap-8">
-                <button className="md:hidden hover:text-gray-600 ">
-                  <User className="w-5 h-5 text-black"/>
+              <div className="flex items-center gap-8">
+                <button className="hidden md:block hover:text-gray-600 transition">
+                  <SearchIcon className="w-5 h-5 text-black"/>
                 </button>
-                <button className="md:hidden hover:text-gray-600 transition">
-                    <ShoppingCartIcon className="w-5 h-5 text-black"/>
+                <button className="hidden md:block hover:text-gray-600 transition">
+                    <User className="w-6 h-6 text-black" />
                 </button>
+                <button className="hidden md:block hover:text-gray-600 transition">
+                    <ShoppingCartIcon className="ww-6 h-6 text-black" />
+                </button>
+              </div>
+
+
+                  <button className="md:hidden hover:text-gray-600 ">
+                    <User className="w-5 h-5 text-black"/>
+                  </button>
+                  <button className="md:hidden hover:text-gray-600 transition">
+                      <ShoppingCartIcon className="w-5 h-5 text-black"/>
+                  </button>
             </div>
 
           </div>
@@ -120,7 +121,7 @@ export default function Home() {
 
 
           {mobileMenuOpen && (
-            <div className="md:hidden absolute bg-gray-500 top-full left-0 right-120 shadow-lg">
+            <div className="md:hidden absolute bg-white top-full left-0 right-0 shadow-lg">
               
                 <nav className="flex flex-col py-6 px-4">
                   <Link 
