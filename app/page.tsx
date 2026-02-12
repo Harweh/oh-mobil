@@ -106,91 +106,21 @@ export default function Home() {
             </div>
 
 
-            <button className="md:hidden hover:text-gray-600 ml-95 ">
-              <User className="w-5 h-5 text-black"/>
-            </button>
-            <button className="md:hidden hover:text-gray-600 transition">
-                <ShoppingCartIcon className="w-5 h-5 text-black"/>
-            </button>
-
-              {/* <button className="lg:hidden">
-                <menu className="w-6 h-6" />
-              </button>
-
-              <nav className="hidden lg:flex text-black items-center gap-8" > 
-                <Link href="/" className="hover:text-gray-600 transition">
-                  Home
-                </Link>
-                <Link href="/" className="hover:text-gray-600 transition">
-                  Catalog
-                </Link>
-                <Link href="/" className="hover:text-gray-600 transition">
-                  Contact
-                </Link>
-              </nav>
-
-              <div className="flex items-center text-black gap-4">
-                <button className="hover:text-gray-600 transition">
-                  <Search className="ww-6 h-6" />
+            <div className="flex items-center gap-8">
+                <button className="md:hidden hover:text-gray-600 ">
+                  <User className="w-5 h-5 text-black"/>
                 </button>
-                <button className="hover:text-gray-600 transition">
-                  <User className="ww-6 h-6" />
+                <button className="md:hidden hover:text-gray-600 transition">
+                    <ShoppingCartIcon className="w-5 h-5 text-black"/>
                 </button>
-                <button className="hover:text-gray-600 transition">
-                  <ShoppingCartIcon className="ww-6 h-6" />
-                </button>
-              </div> */}
+            </div>
+
           </div>
         </div>
 
-        {/* <div className="md:hidden">
-          <div className="fixed inset-0 z-[60] bg-black/50 md:hidden"
-            onClick={closeMenu}
-            >
-
-              <div className="fixed top-0 left-0 h-200 w-64 bg-white z-50 shadow-xl md:hidden">
-                <div className="p-4 border-b flex items-center justify-between ">
-                  <span className="font-bold text-black">Menu</span>
-                  <button
-                    onClick={closeMenu}
-                    type="button"
-              
-                    >
-                    <X className="w-6 h-6 text-black" />
-                  </button>
-
-                  
-                </div>
-                <nav className="flex flex-col p-4">
-                  <Link href="/" className="text-black py-3 px-5 hover:text-gray-500 transition border-b"
-                
-                    onClick={closeMenu}
-
-                  >
-                    Home
-                  </Link>
-                  <Link href="/" className="text-black py-3 px-5 hover:text-gray-500 transition border-b"
-                
-                    onClick={closeMenu}
-
-                  >
-                    Catalog
-                  </Link>
-                  <Link href="/" className="text-black py-3 px-5 hover:text-gray-500 transition border-b"
-                
-                    onClick={closeMenu}
-
-                  >
-                    Contact
-                  </Link>
-                </nav>
-              </div>
-
-          </div>
-        </div> */}
 
           {mobileMenuOpen && (
-            <div className="md:hidden absolute top-full left-0 right-120 bg-white shadow-lg">
+            <div className="md:hidden absolute bg-gray-500 top-full left-0 right-120 shadow-lg">
               
                 <nav className="flex flex-col py-6 px-4">
                   <Link 
@@ -222,7 +152,7 @@ export default function Home() {
       </header>
 
       <section className="relative w-full h-[300px] md:h-[400px] lg:h-[500px]">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-translate z-10">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-translate z-10">
           <Image
             src={Hero}
             alt="Hero"
@@ -232,7 +162,7 @@ export default function Home() {
           />
         </div>
         <div className="relative z-20 h-full flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-4xl text-black md:text-4xl lg:text-5xl font-bold pt-65 mb-6">
+          <h1 className="text-2xl text-black md:text-4xl lg:text-5xl font-bold mb-6">
             Browse our latest products
           </h1>
           <button className="text-sm px-6 md:px-8 py-2.5 md:py-3 cursor-pointer border-1 border-white rounded-2xl hover:bg-gray-300 hover:text-black transition-all mb-6 md:mb-8">
