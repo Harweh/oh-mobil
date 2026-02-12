@@ -57,7 +57,7 @@ export default function Home() {
           <div className="flex items-center justify-between h-10">
 
             <div className="flex items-center gap-4 md:gap-8">
-              <button className="md:hidden text-black hover:text-gray-600 transition mr-6"
+              <button className="md:hidden text-black hover:text-gray-600 transition mr-3"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
                 // onClick={toggleMenu}
@@ -94,7 +94,7 @@ export default function Home() {
             </Link>
 
 
-            <div className="flex items-center gap-8">
+            <div className="flex items-center gap-5">
               <div className="flex items-center gap-8">
                 <button className="hidden md:block hover:text-gray-600 transition">
                   <SearchIcon className="w-5 h-5 text-black"/>
@@ -163,10 +163,10 @@ export default function Home() {
           />
         </div>
         <div className="relative z-20 h-full flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-2xl text-black md:text-4xl lg:text-5xl font-bold mb-6">
+          <h1 className="text-2xl text-black md:text-4xl lg:text-5xl font-bold mb-4 md:mb-8 mt-4 md:mt-8">
             Browse our latest products
           </h1>
-          <button className="text-sm px-6 md:px-8 py-2.5 md:py-3 cursor-pointer border-1 border-white rounded-2xl hover:bg-gray-300 hover:text-black transition-all mb-6 md:mb-8">
+          <button className="text-sm px-4 md:px-8 py-2.5 md:py-3 cursor-pointer border-1 border-white rounded-2xl hover:bg-gray-300 hover:text-black transition-all mb-6 md:mb-8">
             Shop all
           </button>
         </div>
