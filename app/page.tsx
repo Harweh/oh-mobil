@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
 
-      <div className="bg-gray-100 text-black text-center py-2 text-sm">
+      <div className="bg-white text-black text-center py-2.5 text-xs tracking-wide border-b border-gray-100 shadow-sm">
         NEW ARRIVALS: LUXURY BY OH
       </div>
 
@@ -106,7 +106,7 @@ export default function Home() {
             </div>
 
 
-            <button className="md:hidden hover:text-gray-600 ml-100">
+            <button className="md:hidden hover:text-gray-600 ml-95 ">
               <User className="w-5 h-5 text-black"/>
             </button>
             <button className="md:hidden hover:text-gray-600 transition">
@@ -232,7 +232,7 @@ export default function Home() {
           />
         </div>
         <div className="relative z-20 h-full flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-4xl text-gray-500 lg:text-5xl font-bold pt-65 mb-6">
+          <h1 className="text-4xl text-black lg:text-5xl font-bold pt-65 mb-6">
             Browse our latest products
           </h1>
           <button className=" px-8 py-3 cursor-pointer border-1 border-white rounded-2xl hover:bg-gray-300 hover:text-black transition-all mb-8">
@@ -241,13 +241,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto px-4 py-10  ">
-        <h2 className="text-3xl font-bold text-black mb-8 mt-6">Products</h2>
+      <section className="container mx-auto px-4 lg:px-6 py-8 md:py-12 lg:py-16">
+        <h2 className="text-3xl lg:text-3xl font-bold text-black mb-8 md:mb-8 mt-6 md:mt-6">Products</h2>
 
-        <div className="grid grid-ccls-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-ccls-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-6 lg:gap-8">
           {products.map((product) => (
             <div key={product.id} className="group cursor-pointer">
-              <div className="bg-gray-400 rounded-lg mb-4 overflow-hidden aspect-square relative" >
+              <div className="bg-gray-400 rounded-lg mb-3 md:mb-4 overflow-hidden aspect-square relative" >
                 <Image
                 src={product.image}
                 alt={product.name}
@@ -255,10 +255,10 @@ export default function Home() {
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <h3 className="font-medium mb-2 text-sm lg:text-base text-black">
+              <h3 className="font-normal mb-1 md:mb-2 text-xs md:text-sm text-black line-clamp-2">
                 {product.name}
               </h3>
-              <p className="text-gray-600">{product.price}</p>
+              <p className="text-xs md:text-sm text-gray-900">{product.price}</p>
             </div>
           ))}
         </div>
